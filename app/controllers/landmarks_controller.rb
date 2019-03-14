@@ -10,7 +10,7 @@ class LandmarksController < ApplicationController
   end
 
   post "/landmarks" do
-    @landmark = Landmark.create(:name => )
+    @landmark = Landmark.create(:name => params[:landmark][:name])
   end
 
 end
