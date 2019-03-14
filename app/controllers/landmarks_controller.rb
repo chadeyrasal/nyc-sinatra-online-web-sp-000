@@ -27,6 +27,7 @@ class LandmarksController < ApplicationController
     @landmark = Landmark.find(params[:id])
     @landmark.name = params[:landmark][:name]
     @landmark.year_completed = params[:landmark][:year_completed]
+    @landmark.save
   end
 
 end
