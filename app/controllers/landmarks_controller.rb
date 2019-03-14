@@ -13,4 +13,8 @@ class LandmarksController < ApplicationController
     @landmark = Landmark.create(:name => params[:landmark][:name])
   end
 
+  get "/landmarks/:id" do
+    @landmark = Landmark.find(params[:id])
+  end
+
 end
