@@ -9,4 +9,8 @@ class LandmarksController < ApplicationController
     erb :"landmarks/new"
   end
 
+  post "/landmarks" do
+    @landmark = Landmark.create(:name => )
+  end
+
 end
